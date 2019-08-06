@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meme Maker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="prefetch" href="condescending-wonka.jpg">
+    <link rel="prefetch" href="facepalm-picard.png">
+    <link rel="prefetch" href="skeptical-kid.jpg">
+    <link rel="prefetch" href="one-does-not-simply.jpg">
+</head>
+
+<body>
+    <h1>Meme Maker</h1>
+
+    <div id="box">
+        <p id="topText"></p>
+        <p id="bottomText"></p>
+    </div>
+
+    <div id="controlPanel">
+        <div class="section">
+            <div>
+                <strong>Top text:</strong>
+            </div>
+
+            <div>
+                <input id="topTextInput" type="text" placeholder="top text">
+                <input id="topTextColor" type="color" value="#ffffff">
+            </div>
+
+            <div>
+                <label for="topTextFontSize">Font size:</label>
+                <input id="topTextFontSize" type="range" min="20" max="40" value="40">
+            </div>
+        </div>
+
+        <div class="section">
+            <div>
+                <strong>Bottom text:</strong>
+            </div>
+
+            <div>
+                <input id="bottomTextInput" type="text" placeholder="bottom text">
+                <input id="bottomTextColor" type="color" value="#ffffff">
+            </div>
+
+            <div>
+                <label for="bottomTextFontSize">Font size:</label>
+                <input id="bottomTextFontSize" type="range" min="20" max="40" value="40">
+            </div>
+        </div>
+
+        <div class="section">
+            <div>
+                <strong>Background image:</strong>
+            </div>
+
+            <div>
+                <select id="backgroundImage">
+                    <option value="condescending-wonka.jpg">Condescending Wonka</option>
+                    <option value="facepalm-picard.png">Facepalm Picard</option>
+                    <option value="skeptical-kid.jpg">Skeptical Kid</option>
+                    <option value="one-does-not-simply.jpg">One Does Not Simply</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

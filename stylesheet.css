@@ -1,0 +1,78 @@
+body {
+    background-color: beige;
+}
+
+#box,
+#controlPanel {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#box {
+    width: 400px;
+    height: 400px;
+    background-image: url("condescending-wonka.jpg");
+    border: 3px solid black;
+    transition: background-image 1s;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+#topText,
+#bottomText {
+    color: white;
+    font-family: Impact;
+    font-size: 40px;
+    text-shadow: 2px 2px black, -2px 2px black, 2px -2px black, -2px -2px black;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px;
+    word-wrap: break-word;
+}
+
+#bottomText {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section>div {
+    margin-bottom: 15px;
+}
+
+label,
+input {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+label {
+    width: 72px;
+}
+
+#topTextInput,
+#bottomTextInput {
+    width: 238px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+#topTextColor,
+#bottomTextColor {
+    padding: 3px;
+}
+
+#topTextFontSize,
+#bottomTextFontSize {
+    width: 235px;
+}
+
+select {
+    padding: 5px;
+}
