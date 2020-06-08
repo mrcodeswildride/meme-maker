@@ -1,0 +1,82 @@
+body {
+  background-color: beige;
+}
+
+#meme,
+#sidePanel {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#meme {
+  width: 400px;
+  height: 400px;
+  border: 3px solid black;
+  background-image: url("condescending-wonka.jpg");
+  transition: background-image 1s;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+#topParagraph,
+#bottomParagraph {
+  color: white;
+  font-size: 40px;
+  font-family: Impact;
+  text-shadow: 2px 2px black, -2px 2px black, 2px -2px black, -2px -2px black;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+#bottomParagraph {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.input1 {
+  margin-bottom: 15px;
+}
+
+.input2 {
+  margin-bottom: 25px;
+}
+
+input,
+label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#topText,
+#bottomText {
+  width: 238px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+#topColor,
+#bottomColor {
+  padding: 3px;
+}
+
+label {
+  width: 72px;
+}
+
+#topSize,
+#bottomSize {
+  width: 235px;
+}
+
+select {
+  padding: 5px;
+}

@@ -1,47 +1,51 @@
-var box = document.getElementById("box");
-var topText = document.getElementById("topText");
-var bottomText = document.getElementById("bottomText");
+let meme = document.getElementById(`meme`)
+let topParagraph = document.getElementById(`topParagraph`)
+let bottomParagraph = document.getElementById(`bottomParagraph`)
 
-var topTextInput = document.getElementById("topTextInput");
-var topTextColor = document.getElementById("topTextColor");
-var topTextFontSize = document.getElementById("topTextFontSize");
-var bottomTextInput = document.getElementById("bottomTextInput");
-var bottomTextColor = document.getElementById("bottomTextColor");
-var bottomTextFontSize = document.getElementById("bottomTextFontSize");
-var backgroundImage = document.getElementById("backgroundImage");
+let topText = document.getElementById(`topText`)
+let topColor = document.getElementById(`topColor`)
+let topSize = document.getElementById(`topSize`)
 
-topTextInput.addEventListener("input", setTopText);
-topTextColor.addEventListener("input", setTopTextColor);
-topTextFontSize.addEventListener("input", setTopTextFontSize);
-bottomTextInput.addEventListener("input", setBottomText);
-bottomTextColor.addEventListener("input", setBottomTextColor);
-bottomTextFontSize.addEventListener("input", setBottomTextFontSize);
-backgroundImage.addEventListener("input", setBackgroundImage);
+let bottomText = document.getElementById(`bottomText`)
+let bottomColor = document.getElementById(`bottomColor`)
+let bottomSize = document.getElementById(`bottomSize`)
 
-function setTopText() {
-    topText.innerHTML = topTextInput.value;
+let dropdown = document.getElementById(`dropdown`)
+
+topText.addEventListener(`input`, showTopText)
+topColor.addEventListener(`input`, changeTopColor)
+topSize.addEventListener(`input`, changeTopSize)
+
+bottomText.addEventListener(`input`, showBottomText)
+bottomColor.addEventListener(`input`, changeBottomColor)
+bottomSize.addEventListener(`input`, changeBottomSize)
+
+dropdown.addEventListener(`change`, changeImage)
+
+function showTopText() {
+  topParagraph.innerHTML = topText.value
 }
 
-function setTopTextColor() {
-    topText.style.color = topTextColor.value;
+function changeTopColor() {
+  topParagraph.style.color = topColor.value
 }
 
-function setTopTextFontSize() {
-    topText.style.fontSize = topTextFontSize.value + "px";
+function changeTopSize() {
+  topParagraph.style.fontSize =  `${topSize.value}px`
 }
 
-function setBottomText() {
-    bottomText.innerHTML = bottomTextInput.value;
+function showBottomText() {
+  bottomParagraph.innerHTML = bottomText.value
 }
 
-function setBottomTextColor() {
-    bottomText.style.color = bottomTextColor.value;
+function changeBottomColor() {
+  bottomParagraph.style.color = bottomColor.value
 }
 
-function setBottomTextFontSize() {
-    bottomText.style.fontSize = bottomTextFontSize.value + "px";
+function changeBottomSize() {
+  bottomParagraph.style.fontSize = `${bottomSize.value}px`
 }
 
-function setBackgroundImage() {
-    box.style.backgroundImage = 'url("' + backgroundImage.value + '")';
+function changeImage() {
+  meme.style.backgroundImage = `url("${dropdown.value}")`
 }

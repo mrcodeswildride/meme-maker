@@ -2,73 +2,59 @@
 <html>
 
 <head>
-    <title>Meme Maker</title>
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="prefetch" href="condescending-wonka.jpg">
-    <link rel="prefetch" href="facepalm-picard.png">
-    <link rel="prefetch" href="skeptical-kid.jpg">
-    <link rel="prefetch" href="one-does-not-simply.jpg">
+	<title>Meme Maker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<link href="style.css" rel="stylesheet">
+	<link href="condescending-wonka.jpg" rel="prefetch">
+	<link href="facepalm-picard.png" rel="prefetch">
+	<link href="skeptical-kid.jpg" rel="prefetch">
+	<link href="one-does-not-simply.jpg" rel="prefetch">
+	<script src="script.js" defer>
+
+	</script>
 </head>
 
 <body>
-    <h1>Meme Maker</h1>
+	<h1>Meme Maker</h1>
 
-    <div id="box">
-        <p id="topText"></p>
-        <p id="bottomText"></p>
+	<div id="meme">
+		<p id="topParagraph"></p>
+		<p id="bottomParagraph"></p>
+	</div>
+
+	<div id="sidePanel">
+		<p class="label">Top text</p>
+
+		<div class="input1">
+			<input type="text" placeholder="top text" id="topText">
+      <input type="color" value="#ffffff" id="topColor">
     </div>
 
-    <div id="controlPanel">
-        <div class="section">
-            <div>
-                <strong>Top text:</strong>
-            </div>
-
-            <div>
-                <input id="topTextInput" type="text" placeholder="top text">
-                <input id="topTextColor" type="color" value="#ffffff">
-            </div>
-
-            <div>
-                <label for="topTextFontSize">Font size:</label>
-                <input id="topTextFontSize" type="range" min="20" max="40" value="40">
-            </div>
-        </div>
-
-        <div class="section">
-            <div>
-                <strong>Bottom text:</strong>
-            </div>
-
-            <div>
-                <input id="bottomTextInput" type="text" placeholder="bottom text">
-                <input id="bottomTextColor" type="color" value="#ffffff">
-            </div>
-
-            <div>
-                <label for="bottomTextFontSize">Font size:</label>
-                <input id="bottomTextFontSize" type="range" min="20" max="40" value="40">
-            </div>
-        </div>
-
-        <div class="section">
-            <div>
-                <strong>Background image:</strong>
-            </div>
-
-            <div>
-                <select id="backgroundImage">
-                    <option value="condescending-wonka.jpg">Condescending Wonka</option>
-                    <option value="facepalm-picard.png">Facepalm Picard</option>
-                    <option value="skeptical-kid.jpg">Skeptical Kid</option>
-                    <option value="one-does-not-simply.jpg">One Does Not Simply</option>
-                </select>
-            </div>
-        </div>
+    <div class="input2">
+      <label for="topSize">Font size</label>
+      <input type="range" min="20" max="40" value="40" id="topSize">
     </div>
 
-    <script src="script.js"></script>
+    <p class="label">Bottom text</p>
+
+    <div class="input1">
+      <input type="text" placeholder="bottom text" id="bottomText">
+      <input type="color" value="#ffffff" id="bottomColor">
+    </div>
+
+    <div class="input2">
+      <label for="bottomSize">Font size</label>
+      <input type="range" min="20" max="40" value="40" id="bottomSize">
+    </div>
+
+    <p class="label">Image</p>
+
+    <select id="dropdown">
+      <option value="condescending-wonka.jpg">Condescending Wonka</option>
+      <option value="facepalm-picard.png">Facepalm Picard</option>
+      <option value="skeptical-kid.jpg">Skeptical Kid</option>
+      <option value="one-does-not-simply.jpg">One Does Not Simply</option>
+    </select>
 </body>
 
 </html>
