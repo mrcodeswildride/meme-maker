@@ -15,7 +15,6 @@ body {
   background-image: url("condescending-wonka.jpg");
   transition: background-image 1s;
   margin-right: 30px;
-  margin-bottom: 30px;
   position: relative;
   overflow: hidden;
 }
