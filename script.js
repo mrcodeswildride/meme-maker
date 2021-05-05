@@ -22,6 +22,8 @@ bottomSize.addEventListener(`input`, changeBottomSize)
 
 dropdown.addEventListener(`change`, changeImage)
 
+topText.focus()
+
 function showTopText() {
   topParagraph.innerHTML = topText.value
 }
@@ -31,7 +33,7 @@ function changeTopColor() {
 }
 
 function changeTopSize() {
-  topParagraph.style.fontSize =  `${topSize.value}px`
+  topParagraph.style.fontSize = `${topSize.value}px`
 }
 
 function showBottomText() {
